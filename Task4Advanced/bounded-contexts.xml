@@ -1,0 +1,229 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Bounded-Contexts" id="Bounded-Contexts">
+    <mxGraphModel dx="2071" dy="1398" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1860" pageHeight="1780" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t1" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontStyle=2;fontColor=#666666;strokeWidth=1;" value="Домены и их роль в событийной интеграции." vertex="1">
+          <mxGeometry height="22" width="395" x="486" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lh" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#777777;" value="Контексты-источники" vertex="1">
+          <mxGeometry height="18" width="160" x="140" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rh" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#777777;" value="Контексты-подписчики" vertex="1">
+          <mxGeometry height="18" width="193" x="1073.5" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bus" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=center;arcSize=4;spacing=6;spacingTop=24;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="Событийная шина (Kafka)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Доменные топики&lt;br&gt;DLQ&lt;br&gt;Реестр схем и контрактов данных&lt;br&gt;&lt;br&gt;Доставка at-least-once&lt;br&gt;Порядок в пределах ключа агрегата&lt;br&gt;Потребители идемпотентны&lt;/span&gt;" vertex="1">
+          <mxGeometry height="1622" width="230" x="586" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p_mdm" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Идентификация клиента и MDM&#xa;[supporting, PL: единый customerId]" vertex="1">
+          <mxGeometry height="110" width="360" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p_pat" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Пациентский поток&#xa;[core]" vertex="1">
+          <mxGeometry height="110" width="360" x="40" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="p_ai" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ИИ-диагностика&#xa;[core]" vertex="1">
+          <mxGeometry height="110" width="360" x="40" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="p_bill" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Медицинский биллинг&#xa;[supporting]" vertex="1">
+          <mxGeometry height="110" width="360" x="40" y="594" as="geometry" />
+        </mxCell>
+        <mxCell id="p_lend" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Кредитование&#xa;[core]" vertex="1">
+          <mxGeometry height="110" width="360" x="40" y="762" as="geometry" />
+        </mxCell>
+        <mxCell id="p_pay" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Платежи и счета&#xa;[supporting]" vertex="1">
+          <mxGeometry height="110" width="360" x="40" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="p_hr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Управление персоналом&#xa;[supporting]" vertex="1">
+          <mxGeometry height="110" width="360" x="40" y="1098" as="geometry" />
+        </mxCell>
+        <mxCell id="p_inv" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Инвентаризация и оборудование&#xa;[supporting]" vertex="1">
+          <mxGeometry height="110" width="360" x="40" y="1266" as="geometry" />
+        </mxCell>
+        <mxCell id="p_partner" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Партнёрская интеграция&#xa;[supporting, ACL + Open Host Service]" vertex="1">
+          <mxGeometry height="110" width="360" x="40" y="1434" as="geometry" />
+        </mxCell>
+        <mxCell id="p_acl" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#f8cecc;strokeColor=#b85450;dashed=1;" value="Антикоррупционные слои к легаси&#xa;CDC из DWH (SQL Server 2008), адаптеры Camel&#xa;[ACL, временные, с критериями вывода]" vertex="1">
+          <mxGeometry height="130" width="360" x="40" y="1602" as="geometry" />
+        </mxCell>
+        <mxCell id="s_mart" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#d5e8d4;strokeColor=#82b366;" value="Витрина данных и дата-продукты&#xa;[core, Publisher/Subscriber + Conformist]&#xa;Без мед. карт, историй болезни и результатов исследований" vertex="1">
+          <mxGeometry height="110" width="380" x="980" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="s_stream" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#d5e8d4;strokeColor=#82b366;" value="Потоковые витрины near-real-time&#xa;[supporting]" vertex="1">
+          <mxGeometry height="110" width="380" x="980" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="s_comp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Согласия и комплаенс-аудит&#xa;[supporting]" vertex="1">
+          <mxGeometry height="103" width="380" x="980" y="417" as="geometry" />
+        </mxCell>
+        <mxCell id="s_fin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Корпоративная финансовая консолидация&#xa;[supporting]" vertex="1">
+          <mxGeometry height="110" width="380" x="980" y="594" as="geometry" />
+        </mxCell>
+        <mxCell id="s_notif" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#e6e6e6;strokeColor=#808080;" value="Уведомления&#xa;[generic]" vertex="1">
+          <mxGeometry height="110" width="380" x="979" y="762" as="geometry" />
+        </mxCell>
+        <mxCell id="s_iam" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#e6e6e6;strokeColor=#808080;" value="Управление доступом (IAM)&#xa;[generic]" vertex="1">
+          <mxGeometry height="110" width="380" x="979" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="s_ops" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Операционные подписчики цепочки&#xa;ИИ-диагностика, медицинский биллинг, кредитование, платежи и счета&#xa;[core / supporting, Customer/Supplier]" vertex="1">
+          <mxGeometry height="150" width="380" x="980" y="1058" as="geometry" />
+        </mxCell>
+        <mxCell id="s_legbi" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=middle;align=center;arcSize=8;spacing=4;fillColor=#f8cecc;strokeColor=#b85450;dashed=1;" value="Легаси-потребители на период миграции&#xa;BI поверх DWH через ACL&#xa;[legacy, мост совместимости]" vertex="1">
+          <mxGeometry height="120" width="380" x="980" y="1256" as="geometry" />
+        </mxCell>
+        <mxCell id="leg" parent="1" style="rounded=0;html=1;fillColor=#ffffff;strokeColor=#9a9a9a;verticalAlign=top;align=left;fontStyle=1;fontSize=11;spacingLeft=8;spacingTop=6;" value="Обозначения" vertex="1">
+          <mxGeometry height="331" width="400" x="970" y="1425" as="geometry" />
+        </mxCell>
+        <mxCell id="lg1" parent="1" style="rounded=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="14" width="24" x="983" y="1463" as="geometry" />
+        </mxCell>
+        <mxCell id="lg1t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" value="Core-поддомены" vertex="1">
+          <mxGeometry height="16" width="340" x="1015" y="1461" as="geometry" />
+        </mxCell>
+        <mxCell id="lg2" parent="1" style="rounded=0;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="" vertex="1">
+          <mxGeometry height="14" width="24" x="983" y="1489" as="geometry" />
+        </mxCell>
+        <mxCell id="lg2t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" value="Supporting-поддомены" vertex="1">
+          <mxGeometry height="16" width="340" x="1015" y="1487" as="geometry" />
+        </mxCell>
+        <mxCell id="lg3" parent="1" style="rounded=0;html=1;fillColor=#e6e6e6;strokeColor=#808080;" value="" vertex="1">
+          <mxGeometry height="14" width="24" x="983" y="1515" as="geometry" />
+        </mxCell>
+        <mxCell id="lg3t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" value="Generic-поддомены" vertex="1">
+          <mxGeometry height="16" width="340" x="1015" y="1513" as="geometry" />
+        </mxCell>
+        <mxCell id="lg4" parent="1" style="rounded=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry height="14" width="24" x="983" y="1541" as="geometry" />
+        </mxCell>
+        <mxCell id="lg4t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" value="Аналитические витрины и дата-продукты (read side)" vertex="1">
+          <mxGeometry height="16" width="340" x="1015" y="1539" as="geometry" />
+        </mxCell>
+        <mxCell id="lg5" parent="1" style="rounded=0;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="" vertex="1">
+          <mxGeometry height="14" width="24" x="983" y="1567" as="geometry" />
+        </mxCell>
+        <mxCell id="lg5t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" value="Событийная шина" vertex="1">
+          <mxGeometry height="16" width="340" x="1015" y="1565" as="geometry" />
+        </mxCell>
+        <mxCell id="lg6" parent="1" style="rounded=0;html=1;fillColor=#f8cecc;strokeColor=#b85450;dashed=1;" value="" vertex="1">
+          <mxGeometry height="14" width="24" x="983" y="1593" as="geometry" />
+        </mxCell>
+        <mxCell id="lg6t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" value="Легаси и антикоррупционные слои (временные)" vertex="1">
+          <mxGeometry height="16" width="340" x="1015" y="1591" as="geometry" />
+        </mxCell>
+        <mxCell id="lg7t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;" value="Паттерны context map:" vertex="1">
+          <mxGeometry height="16" width="340" x="984" y="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="lg8t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" value="PL - Published Language (единый язык, задаёт MDM)" vertex="1">
+          <mxGeometry height="16" width="370" x="984" y="1630" as="geometry" />
+        </mxCell>
+        <mxCell id="lg9t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" value="OHS - Open Host Service (опубликованный API контекста)" vertex="1">
+          <mxGeometry height="16" width="370" x="984" y="1650" as="geometry" />
+        </mxCell>
+        <mxCell id="lg10t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" value="ACL - Anticorruption Layer (защита модели от чужой)" vertex="1">
+          <mxGeometry height="16" width="370" x="984" y="1670" as="geometry" />
+        </mxCell>
+        <mxCell id="lg11t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" value="Customer/Supplier - согласованный upstream и downstream" vertex="1">
+          <mxGeometry height="16" width="380" x="984" y="1690" as="geometry" />
+        </mxCell>
+        <mxCell id="lg12t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" value="Conformist - downstream принимает модель upstream как есть" vertex="1">
+          <mxGeometry height="16" width="380" x="984" y="1710" as="geometry" />
+        </mxCell>
+        <mxCell id="lg13t" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" value="Publisher/Subscriber - обмен через события в шине" vertex="1">
+          <mxGeometry height="16" width="380" x="984" y="1730" as="geometry" />
+        </mxCell>
+        <mxCell id="e_mdm" edge="1" parent="1" source="p_mdm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1;exitY=0.5;entryX=0;entryY=0.034;" target="bus" value="события идентичности клиента">
+          <mxGeometry relative="1" x="-0.0385" y="16" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_pat" edge="1" parent="1" source="p_pat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1;exitY=0.5;entryX=0;entryY=0.137;" target="bus" value="события пациентского потока">
+          <mxGeometry relative="1" x="0.005" y="15" as="geometry">
+            <mxPoint x="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ai" edge="1" parent="1" source="p_ai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1;exitY=0.5;entryX=0;entryY=0.241;" target="bus" value="события ИИ-исследований">
+          <mxGeometry relative="1" x="0.0006" y="11" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_bill" edge="1" parent="1" source="p_bill" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1;exitY=0.5;entryX=0;entryY=0.345;" target="bus" value="события счетов за услуги">
+          <mxGeometry relative="1" x="-0.0237" y="11" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_lend" edge="1" parent="1" source="p_lend" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1;exitY=0.5;entryX=0;entryY=0.448;" target="bus" value="события кредитов">
+          <mxGeometry relative="1" x="0.0019" y="13" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_pay" edge="1" parent="1" source="p_pay" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1;exitY=0.5;entryX=0;entryY=0.552;" target="bus" value="события платежей и счетов">
+          <mxGeometry relative="1" x="-0.0256" y="14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_hr" edge="1" parent="1" source="p_hr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1;exitY=0.5;entryX=0;entryY=0.655;" target="bus" value="кадровые события">
+          <mxGeometry relative="1" x="0.0037" y="11" as="geometry">
+            <mxPoint x="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_inv" edge="1" parent="1" source="p_inv" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1;exitY=0.5;entryX=0;entryY=0.759;" target="bus" value="события запасов и оборудования">
+          <mxGeometry relative="1" x="-0.0006" y="-13" as="geometry">
+            <mxPoint y="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_partner" edge="1" parent="1" source="p_partner" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1;exitY=0.5;entryX=0;entryY=0.862;" target="bus" value="события партнёрских поставок">
+          <mxGeometry relative="1" x="0.0051" y="14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_acl" edge="1" parent="1" source="p_acl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1;exitY=0.5;entryX=0;entryY=0.972;" target="bus" value="нормализованные события легаси">
+          <mxGeometry relative="1" x="0.0025" y="15" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_mart" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=0.996;exitY=0.034;entryX=0;entryY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="s_mart" value="почти все доменные события">
+          <mxGeometry relative="1" x="0.0062" y="15" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_stream" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;entryX=0;entryY=0.5;" target="s_stream" value="события финтеха и&lt;div&gt;пациентского потока&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0331" y="23" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="817.39" y="313" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_comp" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1;exitY=0.236;entryX=0.002;entryY=0.547;exitDx=0;exitDy=0;exitPerimeter=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="s_comp" value="события согласий,&lt;div&gt;договоров, заключений&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0255" y="-21" as="geometry">
+            <mxPoint y="-43" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_fin" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1.002;exitY=0.345;entryX=0;entryY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="s_fin" value="финансовые события&lt;div&gt;направлений&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0472" y="19" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_notif" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;entryX=0;entryY=0.5;" target="s_notif" value="события для оповещений">
+          <mxGeometry relative="1" x="-0.0283" y="14" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="818.31" y="817" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_iam" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1.002;exitY=0.552;entryX=0;entryY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryDx=0;entryDy=0;" target="s_iam" value="кадровые события и согласия">
+          <mxGeometry relative="1" x="-0.001" y="17" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ops" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1;exitY=0.651;entryX=-0.001;entryY=0.59;exitDx=0;exitDy=0;exitPerimeter=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="s_ops" value="события операционной цепочки">
+          <mxGeometry relative="1" x="-0.0257" y="19" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_legbi" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;fontColor=#2b2b2b;labelBackgroundColor=#ffffff;strokeColor=#5a5a5a;exitX=1;exitY=0.756;entryX=0;entryY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="s_legbi" value="подмножество событий через ACL">
+          <mxGeometry relative="1" x="0.0024" y="15" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

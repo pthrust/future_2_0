@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Data-Mesh-Roadmap" id="Data-Mesh-Roadmap">
+    <mxGraphModel dx="2107" dy="1423" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2160" pageHeight="1320" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t1" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#666666;" value="Стратегический роадмап внедрения Data Mesh. Этапы привязаны к трём фазам трансформации и целям бизнеса." vertex="1">
+          <mxGeometry height="22" width="2000" x="40" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#888888;" value="Строки - потоки работ, столбцы - этапы по времени. Роли: Data Product Owner (DPO), Data Engineer (DE), BI-аналитик, платформенная команда, Data Steward / governance." vertex="1">
+          <mxGeometry height="22" width="2060" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lh" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="Поток работ" vertex="1">
+          <mxGeometry height="48" width="240" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ph0" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="Подготовка&#xa;0-3 мес" vertex="1">
+          <mxGeometry height="48" width="420" x="290" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ph1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="Этап 1. Пилот&#xa;0-6 мес" vertex="1">
+          <mxGeometry height="48" width="420" x="720" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ph2" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="Этап 2. Масштабирование&#xa;6-18 мес" vertex="1">
+          <mxGeometry height="48" width="420" x="1150" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ph3" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="Этап 3. Поддержка и вывод легаси&#xa;18-36 мес" vertex="1">
+          <mxGeometry height="48" width="420" x="1580" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="Фаза программы" vertex="1">
+          <mxGeometry height="56" width="240" x="40" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="Домены в Data Mesh" vertex="1">
+          <mxGeometry height="61" width="240" x="40" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="Дата-продукты и витрины" vertex="1">
+          <mxGeometry height="56" width="240" x="40" y="277" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="Платформа и governance" vertex="1">
+          <mxGeometry height="61" width="240" x="40" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="Роли и команда" vertex="1">
+          <mxGeometry height="78" width="240" x="40" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;fillColor=#fff2cc;strokeColor=#d6b656;" value="Цели бизнеса (вехи)" vertex="1">
+          <mxGeometry height="61" width="240" x="40" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="- Согласование архитектурного решения&#xa;- Принципы работы с событиями, DLQ, каталог схем&#xa;- Операционная модель Data Mesh, RACI" vertex="1">
+          <mxGeometry height="56" width="420" x="290" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="- Пилот в 1-2 доменах&#xa;- Единые контракты данных и конверт события&#xa;- DLQ и повторная обработка на практике" vertex="1">
+          <mxGeometry height="56" width="420" x="720" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="- Расширение на критические домены&#xa;- Потоковые витрины near-real-time&#xa;- ACL к Camel и DWH как мосты совместимости" vertex="1">
+          <mxGeometry height="56" width="420" x="1150" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="- Отказ от синхронных точечных интеграций на критическом пути&#xa;- Доменная аналитика на потоках&#xa;- Вывод DWH и Camel по критериям" vertex="1">
+          <mxGeometry height="56" width="420" x="1580" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#e1d5e7;strokeColor=#9673a6;" value="- Каталог доменов и владельцев&#xa;- Нарезка границ по bounded contexts&#xa;- Выбор пилотных доменов: финансовые расчёты, пациентский поток" vertex="1">
+          <mxGeometry height="61" width="420" x="290" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#e1d5e7;strokeColor=#9673a6;" value="- 2 домена публикуют события в шину&#xa;- Идентификация клиента и MDM как Published Language&#xa;- Идемпотентные потребители" vertex="1">
+          <mxGeometry height="61" width="420" x="720" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#e1d5e7;strokeColor=#9673a6;" value="- 6-10 доменов в Mesh: ИИ-диагностика, биллинг, кредитование, платежи, HR, инвентаризация&#xa;- Партнёрская интеграция через Open Host Service и ACL" vertex="1">
+          <mxGeometry height="61" width="420" x="1150" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#e1d5e7;strokeColor=#9673a6;" value="- Новые домены: фарма, мед. электроника, IoT-телеметрия&#xa;- Все домены обмениваются только событиями&#xa;- Новые регионы с учётом локальных требований" vertex="1">
+          <mxGeometry height="61" width="420" x="1580" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#d5e8d4;strokeColor=#82b366;" value="- Шаблон дата-продукта: контракт, SLA, тесты, документация&#xa;- Определение метрик для семантического слоя" vertex="1">
+          <mxGeometry height="56" width="420" x="290" y="277" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#d5e8d4;strokeColor=#82b366;" value="- 3-5 дата-продуктов в пилотных доменах&#xa;- Первая версия портала self-service BI&#xa;- Семантический слой на пилотных метриках" vertex="1">
+          <mxGeometry height="56" width="420" x="720" y="277" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#d5e8d4;strokeColor=#82b366;" value="- Каталог дата-продуктов с владельцами и SLA&#xa;- Потоковые и пакетные витрины по доменам&#xa;- Конструктор отчётов в портале для бизнес-пользователей" vertex="1">
+          <mxGeometry height="56" width="420" x="1150" y="277" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#d5e8d4;strokeColor=#82b366;" value="- Дата-продукты как основной способ потребления данных&#xa;- Кросс-доменные показатели на потоках&#xa;- Power BI и ручные сверки выведены" vertex="1">
+          <mxGeometry height="56" width="420" x="1580" y="277" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#ffe6cc;strokeColor=#d79b00;" value="- Landing zone в облаке, IaC на Terraform&#xa;- Kafka, Schema Registry, объектное хранилище&#xa;- Политики доступа ABAC, RLS, маскирование PII" vertex="1">
+          <mxGeometry height="61" width="420" x="290" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#ffe6cc;strokeColor=#d79b00;" value="- Self-service инфраструктура для доменов&#xa;- Каталог данных и lineage&#xa;- CI/CD для дата-продуктов, FinOps-мониторинг" vertex="1">
+          <mxGeometry height="61" width="420" x="720" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#ffe6cc;strokeColor=#d79b00;" value="- Flink, Trino, Lakehouse на Iceberg в проде&#xa;- Federated governance: единые правила, автоконтроль&#xa;- Геораспределённое развёртывание для критичных доменов" vertex="1">
+          <mxGeometry height="61" width="420" x="1150" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#ffe6cc;strokeColor=#d79b00;" value="- Платформа как продукт с SLA для доменов&#xa;- Автоматический контроль контрактов и качества&#xa;- Отключение ACL к легаси по мере вывода DWH и Camel" vertex="1">
+          <mxGeometry height="61" width="420" x="1580" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#f5f5f5;strokeColor=#999999;" value="- Формируется платформенная команда и governance-совет&#xa;- Назначены DPO пилотных доменов&#xa;- Найм и обучение DE, план развития BI-аналитиков" vertex="1">
+          <mxGeometry height="78" width="420" x="290" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#f5f5f5;strokeColor=#999999;" value="- DPO отвечает за бэклог и SLA дата-продукта&#xa;- DE строят пайплайны и витрины пилота&#xa;- BI-аналитики переносят ключевые отчёты в портал&#xa;- Data Steward ведёт глоссарий и контракты" vertex="1">
+          <mxGeometry height="78" width="420" x="720" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#f5f5f5;strokeColor=#999999;" value="- В каждом домене: DPO + DE + BI-аналитик&#xa;- Платформенная команда развивает self-service&#xa;- Гильдия дата-инженеров, общие стандарты&#xa;- Обучение бизнес-пользователей конструктору отчётов" vertex="1">
+          <mxGeometry height="78" width="420" x="1150" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#f5f5f5;strokeColor=#999999;" value="- Домены полностью владеют своими дата-продуктами&#xa;- BI-аналитики работают в доменах, а не в центральной команде&#xa;- Центральная роль - только governance и платформа" vertex="1">
+          <mxGeometry height="78" width="420" x="1580" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="c61" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#fff2cc;strokeColor=#d6b656;" value="Промежуточное состояние: решение по трансформации согласовано, границы доменов определены, проекты по витрине запланированы" vertex="1">
+          <mxGeometry height="61" width="420" x="290" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="c62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#fff2cc;strokeColor=#d6b656;" value="Промежуточное состояние закрыто: единые принципы событий, DLQ и каталог схем работают на пилоте; time-to-market пилотных отчётов сокращён" vertex="1">
+          <mxGeometry height="61" width="420" x="720" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="c63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#fff2cc;strokeColor=#d6b656;" value="Финальное состояние (год): портал самообслуживания реализован, бизнес-пользователи доменов работают в новой архитектуре, легаси временно сохранено в отдельных доменах" vertex="1">
+          <mxGeometry height="61" width="420" x="1150" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="c64" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;verticalAlign=top;align=left;spacing=6;fillColor=#fff2cc;strokeColor=#d6b656;" value="Долгосрочная цель (3 года): слабосвязанная событийная платформа, домены взаимодействуют через события; масштабирование по продуктам, географии и данным; near-real-time вместо batch" vertex="1">
+          <mxGeometry height="61" width="420" x="1580" y="502" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
