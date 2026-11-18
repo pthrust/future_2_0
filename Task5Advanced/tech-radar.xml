@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Tech-Radar" id="Tech-Radar">
+    <mxGraphModel dx="2002" dy="1352" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2040" pageHeight="1180" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t1" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#666666;" value="Расширенный технический радар. Технологии и архитектурные паттерны целевой платформы данных, горизонт 3 года." vertex="1">
+          <mxGeometry height="22" width="1900" x="40" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#888888;" value="Кольца статуса: Adopt - применяем по умолчанию; Trial - внедряем на пилотах с готовностью масштабировать; Assess - изучаем прототипами, решение не принято; Hold - не начинать новое, действующее выводить." vertex="1">
+          <mxGeometry height="22" width="1960" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qh1" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="Архитектурные паттерны" vertex="1">
+          <mxGeometry height="44" width="420" x="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="qh2" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="Хранение, платформа, облако" vertex="1">
+          <mxGeometry height="44" width="420" x="690" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="qh3" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="Интеграция и обработка данных" vertex="1">
+          <mxGeometry height="44" width="420" x="1120" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="qh4" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#cccccc;" value="BI, доступ, наблюдаемость" vertex="1">
+          <mxGeometry height="44" width="420" x="1550" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rh_adopt" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#ffffff;fillColor=#82b366;strokeColor=#5f8a48;" value="Adopt" vertex="1">
+          <mxGeometry height="109" width="200" x="40" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="rh_trial" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#ffffff;fillColor=#6c8ebf;strokeColor=#4f6f97;" value="Trial" vertex="1">
+          <mxGeometry height="96" width="200" x="40" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="rh_assess" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#ffffff;fillColor=#d79b00;strokeColor=#b07d00;" value="Assess" vertex="1">
+          <mxGeometry height="77" width="200" x="40" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="rh_hold" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#ffffff;fillColor=#b85450;strokeColor=#94413e;" value="Hold" vertex="1">
+          <mxGeometry height="68" width="200" x="40" y="459" as="geometry" />
+        </mxCell>
+        <mxCell id="c_a1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#eaf3e6;strokeColor=#82b366;" value="- Event-Driven Architecture&#xa;- Data Mesh&#xa;- Domain-Driven Design, bounded contexts&#xa;- Anticorruption Layer для легаси&#xa;- Self-service BI как принцип" vertex="1">
+          <mxGeometry height="109" width="420" x="260" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c_b1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#eaf3e6;strokeColor=#82b366;" value="- Object storage (S3-совместимое)&#xa;- Lakehouse на Apache Iceberg&#xa;- Managed Kubernetes&#xa;- Terraform, IaC&#xa;- Инфраструктура как переиспользуемые модули" vertex="1">
+          <mxGeometry height="109" width="420" x="690" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#eaf3e6;strokeColor=#82b366;" value="- Apache Kafka как событийная шина&#xa;- CDC через Debezium из SQL Server&#xa;- Dead Letter Queue&#xa;- Schema Registry и контракты данных&#xa;- dbt для пакетного ELT" vertex="1">
+          <mxGeometry height="109" width="420" x="1120" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c_d1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#eaf3e6;strokeColor=#82b366;" value="- Семантический слой метрик&#xa;- ABAC + RLS + маскирование PII&#xa;- Data lineage и каталог данных&#xa;- Observability: метрики, логи, трейсы&#xa;- CI/CD для данных и дата-продуктов" vertex="1">
+          <mxGeometry height="109" width="420" x="1550" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c_a2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#e7eef7;strokeColor=#6c8ebf;" value="- Data as a Product, дата-контракты&#xa;- CQRS для потоковых витрин&#xa;- Publisher / Subscriber между доменами&#xa;- Outbox для надёжной публикации событий&#xa;- FinOps как практика управления затратами" vertex="1">
+          <mxGeometry height="96" width="420" x="260" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="c_b2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#e7eef7;strokeColor=#6c8ebf;" value="- Trino, федеративные запросы&#xa;- ClickHouse для потоковых витрин&#xa;- Data Catalog: OpenMetadata или DataHub&#xa;- Feature Store для ИИ-сервисов&#xa;- Iceberg REST-каталог, multi-engine" vertex="1">
+          <mxGeometry height="96" width="420" x="690" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="c_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#e7eef7;strokeColor=#6c8ebf;" value="- Apache Flink, потоковая обработка&#xa;- Kafka Connect&#xa;- Оркестрация: Airflow или Dagster&#xa;- Data Quality: Great Expectations или Soda&#xa;- Reverse ETL в операционные системы" vertex="1">
+          <mxGeometry height="96" width="420" x="1120" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="c_d2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#e7eef7;strokeColor=#6c8ebf;" value="- Портал self-service BI: SPA и конструктор отчётов&#xa;- Superset или Metabase как клиент&#xa;- SLA и SLO для дата-продуктов&#xa;- Каталог дата-продуктов с владельцами&#xa;- Автотесты метрик в CI" vertex="1">
+          <mxGeometry height="96" width="420" x="1550" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c_a3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#f7ecd9;strokeColor=#d79b00;" value="- Kappa, streaming-first аналитика&#xa;- Data Fabric&#xa;- Zero-copy обмен данными между доменами" vertex="1">
+          <mxGeometry height="77" width="420" x="260" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="c_b3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#f7ecd9;strokeColor=#d79b00;" value="- Serverless-запросы, управляемый Trino или Spark&#xa;- Геораспределённое active-active хранилище&#xa;- Управляемый Lakehouse одним вендором" vertex="1">
+          <mxGeometry height="77" width="420" x="690" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="c_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#f7ecd9;strokeColor=#d79b00;" value="- Spark Structured Streaming&#xa;- Flink SQL как основной инструмент витрин&#xa;- Materialize или RisingWave, инкрементальные витрины" vertex="1">
+          <mxGeometry height="77" width="420" x="1120" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="c_d3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#f7ecd9;strokeColor=#d79b00;" value="- Headless BI, слой метрик как API&#xa;- Embedded analytics для партнёров&#xa;- LLM-ассистент к семантическому слою" vertex="1">
+          <mxGeometry height="77" width="420" x="1550" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="c_a4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#f6e3e2;strokeColor=#b85450;" value="- Монолитный DWH с бизнес-логикой&#xa;- Point-to-point синхронные интеграции на критическом пути&#xa;- Ночной batch как единственный способ обмена" vertex="1">
+          <mxGeometry height="68" width="420" x="260" y="459" as="geometry" />
+        </mxCell>
+        <mxCell id="c_b4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#f6e3e2;strokeColor=#b85450;" value="- Microsoft SQL Server 2008 как DWH&#xa;- On-prem storage-массивы для аналитики&#xa;- Собственный ЦОД под аналитическую нагрузку" vertex="1">
+          <mxGeometry height="68" width="420" x="690" y="459" as="geometry" />
+        </mxCell>
+        <mxCell id="c_c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#f6e3e2;strokeColor=#b85450;" value="- Apache Camel ESB как основная интеграция&#xa;- Хранимая бизнес-логика в процедурах DWH&#xa;- Ручные выгрузки и сверки между системами" vertex="1">
+          <mxGeometry height="68" width="420" x="1120" y="459" as="geometry" />
+        </mxCell>
+        <mxCell id="c_d4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;verticalAlign=top;align=left;spacing=8;fillColor=#f6e3e2;strokeColor=#b85450;" value="- Клиент на PowerBuilder&#xa;- Power BI с кастомизациями поверх DWH&#xa;- Ручные Excel-сверки отчётности" vertex="1">
+          <mxGeometry height="68" width="420" x="1550" y="459" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
